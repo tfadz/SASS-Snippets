@@ -8,3 +8,25 @@
     width: 10px;
   }
 }
+
+// CSS Grid
+.mygrid {
+  background: #111;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1px 1px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  &__block {
+    background: #2B2F31;
+    box-shadow: 0 0 0 3px #ccc;
+    color: #FFFFFF;
+    margin: 1rem;
+    padding: 2rem;
+  }
+}
