@@ -1,3 +1,30 @@
+// Nice hover box shadow effect
+
+.element {
+  position: relative;
+  transition: .5s all;
+
+  &:before {
+    box-shadow: none;
+    content: "";
+    left: 1rem;
+    right: 1rem;
+    position: absolute;
+    z-index: 0;
+    transition: .5s all;
+  }
+
+  &:hover {
+    transform: translateY(-1rem) translateZ(0);
+
+    &:before {
+      transform: scale(1.05) translateZ(0);
+      opacity: 1;
+      box-shadow: 0 0 58px rgba(6, 67, 117, 0.4);
+    }
+  }
+}
+
 // Font Awesome pseudo class
 .element {
   &:after {
@@ -22,6 +49,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+
   &__block {
     background: #2B2F31;
     box-shadow: 0 0 0 3px #ccc;
