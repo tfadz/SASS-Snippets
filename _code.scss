@@ -25,6 +25,11 @@
   }
 }
 
+// Inside bottom border
+.element {
+  box-shadow: inset 0 -7px 0 green;
+}
+
 // Font Awesome pseudo class
 .element {
   &:after {
