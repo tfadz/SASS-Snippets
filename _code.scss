@@ -25,6 +25,27 @@
   }
 }
 
+// Fade Box box-shadow 
+
+.content {
+    padding: 1rem 2rem;
+    position: relative;
+    background: white;
+
+    &:after {
+      border-radius: 0 0 300px 300px;
+      box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
+      content: '';
+      display: block;
+      height: 90%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+  }
+
 // Inside bottom border
 .element {
   box-shadow: inset 0 -7px 0 green;
