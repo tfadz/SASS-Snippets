@@ -1,0 +1,21 @@
+// This is to show a grid of 3 items
+
+.prod-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  .item {
+    background: white;
+    padding: 2rem 2.82rem 1rem 2rem;
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.25);
+    flex: 1 1 auto; // this allows margins to space grid evenly
+    height: 350px;
+    margin: 0 1rem 2rem 1rem; // add margins to create gutter
+    position: relative;
+    width: 28.666%;
+
+
+    &:last-child {
+      flex-grow: 0; // this prevents last child from stretching
+    }
+  }
