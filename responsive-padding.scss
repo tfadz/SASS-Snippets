@@ -1,0 +1,25 @@
+.quote-box {
+    background: $blue;
+    padding: 2vw 3vw;
+    color: white;
+    margin: 0 1rem 4rem 1rem;
+    text-transform: uppercase;
+    width: 31%;
+    flex: 0 1 auto;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1400px) {
+      width: 29%;
+    }
+
+    h3 {
+      font-weight: bold;
+      font-family: $font-secondary;
+      padding: 0;
+      color: white;
+      font-size: 3vw;
+    }
+  }
