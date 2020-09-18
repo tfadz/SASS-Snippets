@@ -3,6 +3,12 @@
 .prod-cards {
   display: flex;
   flex-wrap: wrap;
+  
+  // This works to make a left over item thats not 3 across align left. 30.333% is based off the width of the items.
+  &:after {
+    content: "";
+    flex: 0 0 30.333%;
+  }
 
   .item {
     background: white;
