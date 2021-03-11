@@ -1,0 +1,76 @@
+<style>
+  .facetwp-sort-radio {
+    margin-right: .35rem;
+
+    input[type="radio"] {
+      display: none;
+    }
+
+    &:first-child {
+      input[type="radio"] + label {
+        background: url(../images/a-z.svg) no-repeat;
+        background-position: center;
+        border: 2px solid $blue;
+        cursor: pointer;
+        display: inline-block;
+        height: 45px;
+        padding: 0;
+        text-indent: -9999px;
+        width: 48px;
+      }
+
+      input[type="radio"]:checked + label {
+        background: $blue url(../images/a-z--white.svg) no-repeat;
+        background-position: center;
+      }
+
+      &:hover {
+        input[type="radio"] + label {
+          background: $blue url(../images/a-z--white.svg) no-repeat;
+          background-position: center;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      input[type="radio"] + label {
+        background: url(../images/z-a.svg) no-repeat;
+        background-position: center;
+        border: 2px solid $blue;
+        cursor: pointer;
+        display: inline-block;
+        height: 45px;
+        padding: 0;
+        text-indent: -9999px;
+        width: 48px;
+      }
+
+      input[type="radio"]:checked + label {
+        background: $blue url(../images/z-a--white.svg) no-repeat;
+        background-position: center;
+      }
+
+      &:hover {
+        input[type="radio"] + label {
+          background: $blue url(../images/z-a--white.svg) no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+</style>
+
+
+<!-- HTML CODE -->
+
+  <div class="facetwp-sort-radio-group">
+  
+    <div class="facetwp-sort-radio">
+      <input type="radio" name="facetwp-sort-select" id="facetwp-sort-select-title_asc" value="title_asc"><label for="facetwp-sort-select-title_asc">Title (A-Z)</label>
+    </div>
+
+    <div class="facetwp-sort-radio">
+      <input type="radio" name="facetwp-sort-select" id="facetwp-sort-select-title_desc" value="title_desc"><label for="facetwp-sort-select-title_desc">Title (Z-A)</label>
+    </div>
+  
+</div>
