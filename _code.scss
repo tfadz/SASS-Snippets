@@ -85,3 +85,11 @@
     padding: 2rem;
   }
 }
+
+// min width and max width
+
+// when the browser's width is between 1280 and 1365px, change the appearance of a <div> element:
+
+@media screen and (max-width: 1365px) and (min-width: 1280px) {
+  
+}
